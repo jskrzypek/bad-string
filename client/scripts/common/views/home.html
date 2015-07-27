@@ -1,0 +1,11 @@
+<div>Home</div>
+
+<button ng-click="vm.activate()">
+    Add gibberish!
+</button>
+<h2>Messages:</h2>
+<ol>
+    <li ng-repeat="message in vm.messages track by message.date">
+        <p>{{message.date}}: {{message.content}}</p>
+    </li>
+</ol>
